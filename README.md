@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   Rahoot, packaged for YunoHost
 </h1>
 
-Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)
+Quiz platform for smaller events. 
 
 [![Version: 2.0.0~ynh1](https://img.shields.io/badge/Version-2.0.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/rahoot/)
 
@@ -19,7 +19,7 @@ Explain in *a few (10~15) words* the purpose of the app or what it actually does
 
 
 ## Screenshots
-![Screenshot of Rahoot](./doc/screenshots/example.jpg)
+![Screenshot of Rahoot](./doc/screenshots/rahoot.jpg)
 
 ## 📦 Developer info
 
