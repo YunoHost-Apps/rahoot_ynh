@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+ A self-hosted, open-source quiz platform for smaller events. 
