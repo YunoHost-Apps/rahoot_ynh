@@ -7,7 +7,7 @@ name = "Rahoot"
 description.en = "Quiz platform for smaller events"
 description.fr = "Plateforme de quiz pour les petits événements"
 
-version = "2.0.0~ynh1"
+version = "2.0.1~ynh1"
 
 maintainers = ["Thovi98"]
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Ralex91/Rahoot/archive/refs/tags/2.0.0.tar.gz"
-    sha256 = "284390f583e79606dafad26be0f0985f6806f45ff45dc66584f9653122fb25bc"
+    url = "https://github.com/Ralex91/Rahoot/archive/refs/tags/2.0.1.tar.gz"
+    sha256 = "9224feeadde007f5fbcb9ce0eade2db9d9612fb87c2a878c1fcc00295f8cf201"
 
     autoupdate.strategy = "latest_github_tag"
 
