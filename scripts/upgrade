@@ -25,7 +25,10 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="config"
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
+mkdir -p "$install_dir/config"
+
 ynh_config_add --template=".env" --destination="$install_dir/.env"
+ynh_config_add --template=".env" --destination="$install_dir/config/game.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
@@ -52,7 +55,6 @@ pushd $install_dir
     ynh_hide_warnings ynh_exec_as_app CYPRESS_INSTALL_BINARY=0 NODE_OPTIONS="--max-old-space-size=3000" pnpm run build
 
     #remove unneeded files
-    ynh_hide_warnings ynh_exec_as_app pnpm prune --prod --ignore-scripts
     ynh_hide_warnings ynh_exec_as_app pnpm store prune
     ynh_safe_rm src
     ynh_safe_rm server
