@@ -1,1 +1,1 @@
- A self-hosted, open-source quiz platform for smaller events. 
+A self-hosted, open-source quiz platform for smaller events.
