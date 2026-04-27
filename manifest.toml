@@ -20,7 +20,7 @@ fund = "https://ko-fi.com/Ralex91"
 yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
-multi_instance = false # can't be true because of fixed Web Socket port in nginx.conf
+multi_instance = false # can't be true because of fixed Web Socket port
 
 ldap = false
 sso = false
@@ -58,6 +58,8 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
-
+	main.default = 3001    # Upstream WS need Port 3001
+	main.fixed = true
+	
     [resources.nodejs]
     version = "22"
