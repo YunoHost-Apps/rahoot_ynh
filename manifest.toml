@@ -7,7 +7,7 @@ name = "Rahoot"
 description.en = "Quiz platform for smaller events"
 description.fr = "Plateforme de quiz pour les petits événements"
 
-version = "2.0.1~ynh1"
+version = "2.0.2~ynh1"
 
 maintainers = ["Thovi98"]
 
@@ -20,7 +20,7 @@ fund = "https://ko-fi.com/Ralex91"
 yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
-multi_instance = true
+multi_instance = false # can't be true because of fixed Web Socket port
 
 ldap = false
 sso = false
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Ralex91/Rahoot/archive/refs/tags/2.0.1.tar.gz"
-    sha256 = "9224feeadde007f5fbcb9ce0eade2db9d9612fb87c2a878c1fcc00295f8cf201"
+    url = "https://github.com/Ralex91/Rahoot/archive/refs/tags/2.0.2.tar.gz"
+    sha256 = "f077df4896b9ce79bd3581b793e006eee1f3ad428f2ca4c5320e4032b75e3d1a"
 
     autoupdate.strategy = "latest_github_tag"
 
@@ -58,6 +58,8 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
-
+	main.default = 3001    # Upstream WS need Port 3001
+	main.fixed = true
+	
     [resources.nodejs]
     version = "22"
