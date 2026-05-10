@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "rahoot"
-name = "Rahoot"
+name = "Razzia"
 description.en = "Quiz platform for smaller events"
 description.fr = "Plateforme de quiz pour les petits événements"
 
