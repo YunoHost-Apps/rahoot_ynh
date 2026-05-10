@@ -13,7 +13,7 @@ maintainers = ["Thovi98"]
 
 [upstream]
 license = "MIT"
-code = "https://github.com/Ralex91/Rahoot"
+code = "https://github.com/Ralex91/Razzia"
 fund = "https://ko-fi.com/Ralex91"
 
 [integration]
@@ -45,7 +45,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Ralex91/Rahoot/archive/refs/tags/3.0.0.tar.gz"
+    url = "https://github.com/Ralex91/Razzia/archive/refs/tags/3.0.0.tar.gz"
     sha256 = "db79939eb650cacc5cdecfb72cf38ef254b00d6b5ce38fd3a4b403e077456807"
 
     autoupdate.strategy = "latest_github_tag"
