@@ -25,7 +25,7 @@ Quiz platform for smaller events
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/rahoot)](https://ci-apps.yunohost.org/ci/apps/rahoot/)
 
-🛠️ Upstream Rahoot repository: <https://github.com/Ralex91/Rahoot>
+🛠️ Upstream Rahoot repository: <https://github.com/Ralex91/Razzia>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/rahoot_ynh/tree/testing).
 
