@@ -62,4 +62,4 @@ ram.runtime = "50M"
 	main.fixed = true
 	
     [resources.nodejs]
-    version = "22"
+    version = "24"
