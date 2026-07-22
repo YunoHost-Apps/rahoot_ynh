@@ -4,6 +4,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
+source ynh_handle_app_migration
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -12,6 +13,24 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Stopping $app's systemd service..."
 
 ynh_systemctl --service="$app" --action="stop"
+
+#=================================================
+# MIGRATE FROM RAHOOT TO RAZZIA
+#=================================================
+ynh_app_migration_migrate --migration_id="rahoot" --migration_list="migration_list"
+
+if [ $migration_process -eq 1 ]
+then
+
+	# If a migration has been perform
+	# Reload some values changed by the migration process
+	install_dir=$(ynh_app_setting_get --app=$app --key=install_dir)
+
+	ynh_script_progression "Making sure dedicated system user exists..."
+
+	# Create a dedicated user (if not existing)
+	ynh_system_user_create --username=$app --home_dir="$install_dir"
+fi
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -43,6 +62,7 @@ yunohost service add "$app" --log="/var/log/$app/$app.log"
 ynh_config_add_logrotate
 touch /var/log/$app/$app.log
 
+
 #=================================================
 # BUILD APP
 #=================================================
@@ -59,6 +79,21 @@ pushd $install_dir
 popd
 
 chown -R $app:www-data "$install_dir"
+
+
+ynh_config_add_systemd
+yunohost service add "$app" --log="/var/log/$app/$app.log"
+
+#=================================================
+# FINISH MIGRATION PROCESS
+#=================================================
+
+
+if [ $migration_process -eq 1 ]
+then
+	ynh_app_migration_post_migrate
+fi
+
 
 #=================================================
 # START SYSTEMD SERVICE
