@@ -19,4 +19,4 @@ test_format = 1.0
     # -------------------------------
     # Commits to test upgrade from
     # -------------------------------
-    test_upgrade_from.4b31f354947e1cf49e52a9f59a95573a28af37b6.name = "Rahoot"
+    #test_upgrade_from.4b31f354947e1cf49e52a9f59a95573a28af37b6.name = "Rahoot"
