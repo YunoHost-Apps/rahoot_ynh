@@ -4,17 +4,17 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/rahoot.png" width="32px" alt="Logo of Razzia">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/razzia.png" width="32px" alt="Logo of Razzia">
   Razzia, packaged for YunoHost
 </h1>
 
 Quiz platform for smaller events
 
-[![Version: 3.1.0~ynh1](https://img.shields.io/badge/Version-3.1.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/rahoot/)
+[![Version: 3.1.0~ynh2](https://img.shields.io/badge/Version-3.1.0~ynh2-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/razzia/)
 
 <div align="center">
-<a href="https://apps.yunohost.org/app/rahoot"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
-<a href="https://github.com/YunoHost-Apps/rahoot_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
+<a href="https://apps.yunohost.org/app/razzia"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
+<a href="https://github.com/YunoHost-Apps/razzia_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
 
@@ -23,19 +23,19 @@ Quiz platform for smaller events
 
 ## 📦 Developer info
 
-[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/rahoot)](https://ci-apps.yunohost.org/ci/apps/rahoot/)
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/razzia)](https://ci-apps.yunohost.org/ci/apps/razzia/)
 
 🛠️ Upstream Razzia repository: <https://github.com/Ralex91/Razzia>
 
-Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/rahoot_ynh/tree/testing).
+Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/razzia_ynh/tree/testing).
 
 The `testing` branch can be tested using:
 ```
 # fresh install:
-sudo yunohost app install https://github.com/YunoHost-Apps/rahoot_ynh/tree/testing
+sudo yunohost app install https://github.com/YunoHost-Apps/razzia_ynh/tree/testing
 
 # upgrade an existing install:
-sudo yunohost app upgrade rahoot -u https://github.com/YunoHost-Apps/rahoot_ynh/tree/testing
+sudo yunohost app upgrade razzia -u https://github.com/YunoHost-Apps/razzia_ynh/tree/testing
 ```
 
 ### 📚 App packaging documentation
